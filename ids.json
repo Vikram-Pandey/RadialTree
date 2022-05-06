@@ -1,0 +1,178 @@
+{"name": "Drug","children":[
+    {"name": "Analgesic"},
+    {"name": "AntiInfectiveAgents"},
+    {"name": "AntihypertensiveAgents"},
+    {"name": "CardiovascularAgents"},
+    {"name": "Enzymeinhibitors"},
+    {"name": "GlucagonLikePeptide"},
+    {"name": "OphthalmicAgents"},
+    {"name": "OralHypoglycemicAgents","children":[
+        {"name": "DPP4Inhibitors","children":[
+            {"name": "Alogliptin"},
+            {"name": "Linagliptin"},
+            {"name": "Saxagliptin"},
+            {"name": "Sitagliptin"},
+            {"name": "Vildagliptin"}
+        ]},
+        {"name": "Glitazone","children":[
+            {"name": "Pioglitazone"},
+            {"name": "Rosiglitazone"}
+        ]},
+        {"name": "SGLTI","children":[
+            {"name": "Canagliflozin"},
+            {"name": "Dapagliflozin"}
+        ]},
+
+        {"name": "Sulfonylurea","children":[
+            {"name": "Gliclazide"},
+            {"name": "Glimepiride"},
+            {"name": "Glipizide"},
+            {"name": "Glyburide"}
+        ]}
+    ]},
+    {"name": "Insulin","children":[
+        {"name": "PreMixed"},
+        {"name": "RapidActing"},
+        {"name": "Regular"},
+        {"name": "IntermediateActing"},
+        {"name": "LongActing"}
+    ]},
+
+    {"name": "OralNonHypoglycemicAgents","children":[
+        {"name": "Biguanides","children":[
+            {"name": "Metformin"}
+        ]}
+        
+    ]}
+
+]},
+
+{"name": "Diagnosis","children":[
+    {"name": "LADA"},
+    {"name": "MODY"},
+    {"name": "Type2Diabetes"},
+    {"name": "Type1Diabetes"}
+]},
+
+{"name": "DiabeticComplication","feature":"true","children":[
+    {"name": "AcuteComplication","feature":"true","children":[
+        {"name": "DiabeticKetoacidosis"},
+        {"name": "Hyperglycaemia"},
+        {"name": "HyperosmolarHyperglycaemicState"},
+        {"name": "Hypoglycaemia"},
+        {"name": "Genital thrush","feature":"true"},
+        {"name": "MuscleStiffness"}
+    ]},
+    {"name": "ChronicComplication","children":[
+        {"name": "Nonvascular","children":[
+            {"name": "Gastroparesis"},
+            {"name": "GumDisease"},
+            {"name": "Infections"},
+            {"name": "SkinChanges"}
+
+        ]},
+        {"name": "Vascular","children":[
+            {"name": "Macrovascular","children":[
+                {"name": "CarotidArteryStenosis"},
+                {"name": "CarotidArteryStenosis"},
+                {"name": "DiabeticMyonecrosis"},
+                {"name": "HeartAttack"},
+                {"name": "DiabeticNeuropathy"},
+                {"name": "ErectileDysfunction"},
+                {"name": "EyeProblems"},
+                {"name": "KidneyProblems"}
+
+            ]},
+            {"name": "Microvascular"}
+        ]}
+    ]}
+    
+]},
+
+{"name": "Intervention","children":[
+    {"name": "Diet"},
+    {"name": "Exercise"},
+    {"name": "PharmacologicTreatment"},
+    {"name": "WeightLossIntervention"}
+]},
+
+{"name": "Symptoms","feature":"true","children":[
+    {"name": "Cholestasis"},
+    {"name": "Diarrhea"},
+    {"name": "Drowsiness"},
+    {"name": "Edema"},
+    {"name": "Emphysema"},
+    {"name": "Fatigue"},
+    {"name": "FootSymptom"},
+    {"name": "HyperEsthesia"},
+    {"name": "Nausea"},
+    {"name": "Numbness"},
+    {"name": "SkinThickness","feature":"true"},
+    {"name": "Polyuria","feature":"true"},
+    {"name": "Polydipsia","feature":"true"},
+    {"name": "SuddenWeightLosss","feature":"true"},
+    {"name": "Weakness","feature":"true"},
+    {"name": "Polyphagia","feature":"true"},
+    {"name": "VisualBlurring","feature":"true"},
+    {"name": "Itching","feature":"true"},
+    {"name": "Irritability","feature":"true"},
+    {"name": "DelayedHealing","feature":"true"},
+    {"name": "PartialParesis","feature":"true"},
+    {"name": "MuscleStiffness","feature":"true"},
+    {"name": "Alopecia","info" : [{img:"Allopecia.jpg",Lable:"Alopecia loss of hair", Description:"Loss of hair from the head or body",url:"www.wikidata.org/wiki/Q2697787"}],"feature":"true"}
+
+]}
+
+
+]},
+{"name": "RiskFactor","feature":"true","children": [
+{"name": "AgeRiskFactor","feature":"true"},
+{"name": "FamilyHistory","children":[
+    {"name": "DiabetesPedigreeFunction","feature":"true"}
+]},
+{"name": "Inactivity"},
+{"name": "Obesity","feature":"true"}
+]},
+{"name": "Examination","feature":"true","children": [
+{"name": "ClinicalLab","feature":"true","children":[
+    {"name": "BasophilsCount"},
+    {"name": "DirectBilirubin"},
+    {"name": "FastGlucoseLevels","feature":"true"},
+    {"name": "HbA1c"},
+    {"name": "InsulinAntibodies","feature":"true"},
+    {"name": "LactateAcid"},
+    {"name": "OGTT"},
+    {"name": "SerumCreatinine"},
+    {"name": "SerumKetone"},
+    {"name": "TotalCholesterol"},
+    {"name": "C‑peptide"}
+    
+]},
+{"name": "PhysicalExamination","feature":"true","children":[
+    {"name": "BMI-Examination","feature":"true"},
+    {"name": "BloodPressure","feature":"true"},
+    {"name": "FootAssessment"},
+    {"name": "FunduscopicExamination"},
+    {"name": "LimitedVascular"},
+    {"name": "NeurologicExaminations"},
+    {"name": "PhysicalActivity"},
+    {"name": "ThyroidFunction"},
+    {"name": "VitalSigns"},
+    {"name": "WaistCircumference"}    
+]}
+]},
+{"name": "PhysicalFinding","children": [
+{"name": "AbsentLightTouch"},
+{"name": "ClawToes"},
+{"name": "DryFeet"},
+{"name": "Exudates"},
+{"name": "EyeHemorrhages"},
+{"name": "Hypertension"},
+{"name": "MuscleAtrophy"},
+{"name": "Neovascularization"},
+{"name": "NeurologicDecreasedor"},
+{"name": "SkinAcanthosisnNgricans"},
+{"name": "TemperatureSensation"}
+]},
+
+{"name": "Pregnancies","feature":"true"}

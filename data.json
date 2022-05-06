@@ -1,0 +1,279 @@
+{
+    "name": "Patient","feature":"true",
+    "children": [
+        {
+            "name": "PatientRecord","feature":"true","children": [
+                {"name": "Disease","feature":"true","children": [
+                    {"name": "Drug","children":[
+                        {"name": "Analgesic"},
+                        {"name": "AntiInfectiveAgents"},
+                        {"name": "AntihypertensiveAgents"},
+                        {"name": "CardiovascularAgents"},
+                        {"name": "Enzymeinhibitors"},
+                        {"name": "GlucagonLikePeptide"},
+                        {"name": "OphthalmicAgents"},
+                        {"name": "OralHypoglycemicAgents","children":[
+                            {"name": "DPP4Inhibitors","children":[
+                                {"name": "Alogliptin"},
+                                {"name": "Linagliptin"},
+                                {"name": "Saxagliptin"},
+                                {"name": "Sitagliptin"},
+                                {"name": "Vildagliptin"}
+                            ]},
+                            {"name": "Glitazone","children":[
+                                {"name": "Pioglitazone"},
+                                {"name": "Rosiglitazone"}
+                            ]},
+                            {"name": "SGLTI","children":[
+                                {"name": "Canagliflozin"},
+                                {"name": "Dapagliflozin"}
+                            ]},
+
+                            {"name": "Sulfonylurea","children":[
+                                {"name": "Gliclazide"},
+                                {"name": "Glimepiride"},
+                                {"name": "Glipizide"},
+                                {"name": "Glyburide"}
+                            ]}
+                        ]},
+                        {"name": "Insulin","children":[
+                            {"name": "PreMixed"},
+                            {"name": "RapidActing"},
+                            {"name": "Regular"},
+                            {"name": "IntermediateActing"},
+                            {"name": "LongActing"}
+                        ]},
+
+                        {"name": "OralNonHypoglycemicAgents","children":[
+                            {"name": "Biguanides","children":[
+                                {"name": "Metformin"}
+                            ]}
+                            
+                        ]}
+
+                    ]},
+
+                    {"name": "Diagnosis","children":[
+                        {"name": "LADA"},
+                        {"name": "MODY"},
+                        {"name": "Type2Diabetes"},
+                        {"name": "Type1Diabetes"}
+                    ]},
+
+                    {"name": "DiabeticComplication","feature":"true","children":[
+                        {"name": "AcuteComplication","feature":"true","children":[
+                            {"name": "DiabeticKetoacidosis"},
+                            {"name": "Hyperglycaemia"},
+                            {"name": "HyperosmolarHyperglycaemicState"},
+                            {"name": "Hypoglycaemia"},
+                            {"name": "Genital thrush","feature":"true"},
+                            {"name": "MuscleStiffness"}
+                        ]},
+                        {"name": "ChronicComplication","children":[
+                            {"name": "Nonvascular","children":[
+                                {"name": "Gastroparesis"},
+                                {"name": "GumDisease"},
+                                {"name": "Infections"},
+                                {"name": "SkinChanges"}
+
+                            ]},
+                            {"name": "Vascular","children":[
+                                {"name": "Macrovascular","children":[
+                                    {"name": "CarotidArteryStenosis"},
+                                    {"name": "CarotidArteryStenosis"},
+                                    {"name": "DiabeticMyonecrosis"},
+                                    {"name": "HeartAttack"},
+                                    {"name": "DiabeticNeuropathy"},
+                                    {"name": "ErectileDysfunction"},
+                                    {"name": "EyeProblems"},
+                                    {"name": "KidneyProblems"}
+
+                                ]},
+                                {"name": "Microvascular"}
+                            ]}
+                        ]}
+                        
+                    ]},
+                    
+                    {"name": "Intervention","children":[
+                        {"name": "Diet"},
+                        {"name": "Exercise"},
+                        {"name": "PharmacologicTreatment"},
+                        {"name": "WeightLossIntervention"}
+                    ]},
+
+                    {"name": "Symptoms","feature":"true","children":[
+                        {"name": "Cholestasis"},
+                        {"name": "Diarrhea"},
+                        {"name": "Drowsiness"},
+                        {"name": "Edema"},
+                        {"name": "Emphysema"},
+                        {"name": "Fatigue"},
+                        {"name": "FootSymptom"},
+                        {"name": "HyperEsthesia"},
+                        {"name": "Nausea"},
+                        {"name": "Numbness"},
+                        {"name": "SkinThickness","feature":"true"},
+                        {"name": "Polyuria","feature":"true"},
+                        {"name": "Polydipsia","feature":"true"},
+                        {"name": "SuddenWeightLosss","feature":"true"},
+                        {"name": "Weakness","feature":"true"},
+                        {"name": "Polyphagia","feature":"true"},
+                        {"name": "VisualBlurring","feature":"true"},
+                        {"name": "Itching","feature":"true"},
+                        {"name": "Irritability","feature":"true"},
+                        {"name": "DelayedHealing","feature":"true"},
+                        {"name": "PartialParesis","feature":"true"},
+                        {"name": "MuscleStiffness","feature":"true"},
+                        {"name": "Alopecia","info" : [{img:"Allopecia.jpg",Lable:"Alopecia loss of hair", Description:"Loss of hair from the head or body",url:"www.wikidata.org/wiki/Q2697787"}],"feature":"true"}
+
+                    ]}
+
+                    
+                ]},
+                {"name": "RiskFactor","feature":"true","children": [
+                    {"name": "AgeRiskFactor","feature":"true"},
+                    {"name": "FamilyHistory","children":[
+                        {"name": "DiabetesPedigreeFunction","feature":"true"}
+                    ]},
+                    {"name": "Inactivity"},
+                    {"name": "Obesity","feature":"true"}
+                ]},
+                {"name": "Examination","feature":"true","children": [
+                    {"name": "ClinicalLab","feature":"true","children":[
+                        {"name": "BasophilsCount"},
+                        {"name": "DirectBilirubin"},
+                        {"name": "FastGlucoseLevels","feature":"true"},
+                        {"name": "HbA1c"},
+                        {"name": "InsulinAntibodies","feature":"true"},
+                        {"name": "LactateAcid"},
+                        {"name": "OGTT"},
+                        {"name": "SerumCreatinine"},
+                        {"name": "SerumKetone"},
+                        {"name": "TotalCholesterol"},
+                        {"name": "C‑peptide"}
+                        
+                    ]},
+                    {"name": "PhysicalExamination","feature":"true","children":[
+                        {"name": "BMI-Examination","feature":"true"},
+                        {"name": "BloodPressure","feature":"true"},
+                        {"name": "FootAssessment"},
+                        {"name": "FunduscopicExamination"},
+                        {"name": "LimitedVascular"},
+                        {"name": "NeurologicExaminations"},
+                        {"name": "PhysicalActivity"},
+                        {"name": "ThyroidFunction"},
+                        {"name": "VitalSigns"},
+                        {"name": "WaistCircumference"}    
+                    ]}
+                ]},
+                {"name": "PhysicalFinding","children": [
+                    {"name": "AbsentLightTouch"},
+                    {"name": "ClawToes"},
+                    {"name": "DryFeet"},
+                    {"name": "Exudates"},
+                    {"name": "EyeHemorrhages"},
+                    {"name": "Hypertension"},
+                    {"name": "MuscleAtrophy"},
+                    {"name": "Neovascularization"},
+                    {"name": "NeurologicDecreasedor"},
+                    {"name": "SkinAcanthosisnNgricans"},
+                    {"name": "TemperatureSensation"}
+                ]},
+
+                {"name": "Pregnancies","feature":"true"}
+            ]
+        },
+        {
+            "name": "DemographicInfo","children": [
+                {"name": "Age","feature":"true"},
+                {"name": "Gender","feature":"true","children":[
+                    {"name": "Male"},
+                    {"name": "Female"}
+                ]},
+                // {"name": "Race"},
+                // {"name": "AUT-24"},
+                // {"name": "AUT-25"},
+                // {"name": "AUT-26"},
+                // {"name": "AUT-27"},
+                // {"name": "AUT-28","children":[
+                //     {"name": "AFF-281"},
+                //     {"name": "AFF-282"},
+                //     {"name": "AFF-283"},
+                //     {"name": "AFF-284"},
+                //     {"name": "AFF-285"},
+                //     {"name": "AFF-286"}
+                // ]}
+            ]
+        },
+        // {"name": "PUB-3"},
+        // {
+        //     "name": "PUB-4","children": [
+        //         {"name": "AUT-41"},
+        //         {"name": "AUT-42"},
+        //         {"name": "AUT-43","children": [
+        //             {"name": "AFF-431"},
+        //             {"name": "AFF-432"},
+        //             {"name": "AFF-433"},
+        //             {"name": "AFF-434","children":[
+        //                 {"name": "ADD-4341"},
+        //                 {"name": "ADD-4342"}
+        //             ]}
+        //         ]},
+        //         {"name": "AUT-44"}
+        //     ]
+        // },
+        // {
+        //     "name": "PUB-5","children": [
+        //         {"name": "AUT-51","children":[
+        //             {"name": "AFF-511"},
+        //             {"name": "AFF-512"},
+        //             {"name": "AFF-513"},
+        //             {"name": "AFF-514"},
+        //             {"name": "AFF-515"},
+        //             {"name": "AFF-516"}
+        //         ]},
+        //         {"name": "AUT-52"},
+        //         {"name": "AUT-53"},
+        //         {"name": "AUT-54"},
+        //         {"name": "AUT-55","children":[
+        //             {"name": "AFF-551"},
+        //             {"name": "AFF-552"},
+        //             {"name": "AFF-553"},
+        //             {"name": "AFF-554"}
+        //         ]},
+        //         {"name": "AUT-56"},
+        //         {"name": "AUT-57"},
+        //         {"name": "AUT-58"},
+        //         {"name": "AUT-59"},
+        //         {"name": "AUT-591"},
+        //         {"name": "AUT-592"},
+        //         {"name": "AUT-593"},
+        //         {"name": "AUT-594"},
+        //         {"name": "AUT-595"},
+        //         {"name": "AUT-596"}
+        //     ]
+        // },
+        // {
+        //     "name": "PUB-6","feature":"true","children": [
+        //       {"name": "AUT-61","children":[
+        //           {"name": "AFF-611"},
+        //           {"name": "AFF-612"},
+        //           {"name": "AFF-613"},
+        //           {"name": "AFF-614","children":[
+        //               {"name": "ADD-6141"},
+        //               {"name": "ADD-6142"}
+        //           ]}
+        //       ]},
+        //       {"name": "AUT-62","feature":"true"},
+        //       {"name": "AUT-63","feature":"true"},
+        //       {"name": "AUT-64","feature":"true"},
+        //       {"name": "AUT-65","feature":"true"},
+        //       {"name": "AUT-66","feature":"true"},
+        //       {"name": "AUT-67","feature":"true"},
+        //       {"name": "AUT-68","feature":"true"},
+        //       {"name": "AUT-69","feature":"true"}
+        //     ]
+        // }
+    ]
+};

@@ -1,0 +1,39 @@
+.node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  
+  .node text {
+    font: 10px sans-serif;
+  }
+  
+  .link {
+    fill: none;
+    /* stroke: #ccc; */
+    stroke-width: 1.5px;
+  }
+
+  .selectiveLink{
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+  }
+
+  div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 550px;
+    height: 100px;
+    padding: 8px;
+    font: 20px sans-serif;
+    background: #ffff99;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+    white-space:pre-wrap;
+}
